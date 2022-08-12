@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "orange-portal": "apps/orange-portal",
+    "orange-portal-e2e": "apps/orange-portal-e2e"
+  }
+}
