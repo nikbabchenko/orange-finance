@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/orange-portal",
         "index": "apps/orange-portal/src/index.html",
@@ -17,7 +19,11 @@
           "apps/orange-portal/src/favicon.ico",
           "apps/orange-portal/src/assets"
         ],
-        "styles": ["apps/orange-portal/src/styles.scss"],
+        "styles": [
+          "apps/orange-portal/src/styles.scss",
+          "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+          "libs/ui-kit/theme/theme.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -82,7 +88,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/orange-portal"],
+      "outputs": [
+        "coverage/apps/orange-portal"
+      ],
       "options": {
         "jestConfig": "apps/orange-portal/jest.config.ts",
         "passWithNoTests": true
