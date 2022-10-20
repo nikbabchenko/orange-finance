@@ -3,7 +3,7 @@
   "version": 2,
   "projects": {
     "core-services-storage": "libs/core/services/storage",
-    "orange-portal": "apps/orange-portal",
-    "orange-portal-e2e": "apps/orange-portal-e2e"
+    "dashboard": "apps/dashboard",
+    "orange-portal": "apps/orange-portal"
   }
 }
