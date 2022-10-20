@@ -1,13 +1,11 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/orange-portal/src",
-  "prefix": "orange-finance",
+  "prefix": "oe",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "executor": "@nrwl/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/orange-portal",
         "index": "apps/orange-portal/src/index.html",
@@ -19,12 +17,11 @@
           "apps/orange-portal/src/favicon.ico",
           "apps/orange-portal/src/assets"
         ],
-        "styles": [
-          "apps/orange-portal/src/styles.scss",
-          "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-          "libs/ui-kit/theme/theme.scss"
-        ],
-        "scripts": []
+        "styles": ["apps/orange-portal/src/styles.scss"],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/orange-portal/webpack.config.js"
+        }
       },
       "configurations": {
         "production": {
@@ -46,7 +43,10 @@
               "with": "apps/orange-portal/src/environments/environment.prod.ts"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/orange-portal/webpack.prod.config.js"
+          }
         },
         "development": {
           "buildOptimizer": false,
@@ -60,7 +60,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nrwl/angular:module-federation-dev-server",
       "configurations": {
         "production": {
           "browserTarget": "orange-portal:build:production"
@@ -69,7 +69,11 @@
           "browserTarget": "orange-portal:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 4200,
+        "publicHost": "http://localhost:4200"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -88,14 +92,12 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/orange-portal"
-      ],
+      "outputs": ["coverage/apps/orange-portal"],
       "options": {
         "jestConfig": "apps/orange-portal/jest.config.ts",
         "passWithNoTests": true
       }
     }
   },
-  "tags": []
+  "tags": ["app"]
 }

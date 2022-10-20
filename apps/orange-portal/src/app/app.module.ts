@@ -2,12 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [RouterModule, BrowserModule, BrowserAnimationsModule],
+  declarations: [AppComponent, NxWelcomeComponent],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(
+      [
+        {
+          path: '',
+          component: NxWelcomeComponent,
+        },
+      ],
+      { initialNavigation: 'enabledBlocking' }
+    ),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
