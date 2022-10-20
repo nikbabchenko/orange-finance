@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/core/services/storage/src",
+  "prefix": "orange-finance",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/core/services/storage"],
+      "options": {
+        "project": "libs/core/services/storage/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/core/services/storage/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/core/services/storage/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/core/services/storage"],
+      "options": {
+        "jestConfig": "libs/core/services/storage/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/core/services/storage/**/*.ts",
+          "libs/core/services/storage/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["core"]
+}

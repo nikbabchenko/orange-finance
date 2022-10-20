@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "core-services-storage": "libs/core/services/storage",
     "orange-portal": "apps/orange-portal",
     "orange-portal-e2e": "apps/orange-portal-e2e"
   }
