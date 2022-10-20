@@ -17,7 +17,8 @@
     "paths": {
       "@orange-core/storage-service": [
         "libs/core/services/storage/src/index.ts"
-      ]
+      ],
+      "@orange-features/dashboard": ["libs/features/dashboard/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

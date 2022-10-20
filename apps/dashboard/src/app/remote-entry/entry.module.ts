@@ -1,19 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 
-import { RemoteEntryComponent } from './entry.component';
+import { FeaturesDashboardModule } from '@orange-features/dashboard';
 
 @NgModule({
-  declarations: [RemoteEntryComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: RemoteEntryComponent,
-      },
-    ]),
+    FeaturesDashboardModule
   ],
   providers: [],
 })

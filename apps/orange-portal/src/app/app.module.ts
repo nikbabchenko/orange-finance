@@ -15,6 +15,7 @@ import { loadRemoteModule } from '@nrwl/angular/mf';
         {
           path: '',
           redirectTo: 'dashboard',
+          pathMatch: 'full',  
         },
         {
           path: 'dashboard',

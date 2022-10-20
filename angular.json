@@ -4,6 +4,7 @@
   "projects": {
     "core-services-storage": "libs/core/services/storage",
     "dashboard": "apps/dashboard",
+    "features-dashboard": "libs/features/dashboard",
     "orange-portal": "apps/orange-portal"
   }
 }
