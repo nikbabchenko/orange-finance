@@ -5,6 +5,7 @@
     "core-services-storage": "libs/core/services/storage",
     "dashboard": "apps/dashboard",
     "features-dashboard": "libs/features/dashboard",
+    "history": "apps/history",
     "orange-portal": "apps/orange-portal"
   }
 }

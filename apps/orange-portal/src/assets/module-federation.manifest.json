@@ -1,3 +1,4 @@
 {
-  "dashboard": "http://localhost:4300"
+  "dashboard": "http://localhost:4300",
+  "history": "http://localhost:4305"
 }

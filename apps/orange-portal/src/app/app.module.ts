@@ -15,12 +15,19 @@ import { loadRemoteModule } from '@nrwl/angular/mf';
         {
           path: '',
           redirectTo: 'dashboard',
-          pathMatch: 'full',  
+          pathMatch: 'full',
         },
         {
           path: 'dashboard',
           loadChildren: () =>
             loadRemoteModule('dashboard', './Module').then(
+              (m) => m.RemoteEntryModule
+            ),
+        },
+        {
+          path: 'history',
+          loadChildren: () =>
+            loadRemoteModule('history', './Module').then(
               (m) => m.RemoteEntryModule
             ),
         },
