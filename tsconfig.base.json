@@ -18,6 +18,9 @@
       "@orange-core/storage-service": [
         "libs/core/services/storage/src/index.ts"
       ],
+      "@orange-features-shared/navbar": [
+        "libs/features/shared/navbar/src/index.ts"
+      ],
       "@orange-features/dashboard": ["libs/features/dashboard/src/index.ts"],
       "@orange-features/history": ["libs/features/history/src/index.ts"],
       "@orange-ui-kit/components/toolbar": [

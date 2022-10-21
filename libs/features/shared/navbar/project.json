@@ -1,0 +1,72 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/features/shared/navbar/src",
+  "prefix": "oe-shared",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/features/shared/navbar"],
+      "options": {
+        "project": "libs/features/shared/navbar/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/features/shared/navbar/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/features/shared/navbar/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/features/shared/navbar"],
+      "options": {
+        "jestConfig": "libs/features/shared/navbar/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/features/shared/navbar/**/*.ts",
+          "libs/features/shared/navbar/**/*.html"
+        ]
+      }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/features/shared/navbar/.storybook",
+        "browserTarget": "features-shared-navbar:build-storybook",
+        "compodoc": false,
+        "styles": ["libs/ui-kit/theme/theme.scss"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/features-shared-navbar",
+        "configDir": "libs/features/shared/navbar/.storybook",
+        "browserTarget": "features-shared-navbar:build-storybook",
+        "compodoc": false,
+        "styles": ["libs/ui-kit/theme/theme.scss"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  },
+  "tags": ["shared"]
+}

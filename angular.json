@@ -4,9 +4,11 @@
   "projects": {
     "core-services-storage": "libs/core/services/storage",
     "dashboard": "apps/dashboard",
+    "e2e-navbar-e2e": "apps/e2e/navbar-e2e",
     "e2e-toolbar-e2e": "apps/e2e/toolbar-e2e",
     "features-dashboard": "libs/features/dashboard",
     "features-history": "libs/features/history",
+    "features-shared-navbar": "libs/features/shared/navbar",
     "history": "apps/history",
     "orange-portal": "apps/orange-portal",
     "ui-kit-components-toolbar": "libs/ui-kit/components/toolbar"
