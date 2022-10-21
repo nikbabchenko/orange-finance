@@ -11,6 +11,7 @@
     "features-shared-navbar": "libs/features/shared/navbar",
     "history": "apps/history",
     "orange-portal": "apps/orange-portal",
+    "storybook": "libs/storybook",
     "ui-kit-components-toolbar": "libs/ui-kit/components/toolbar"
   }
 }
