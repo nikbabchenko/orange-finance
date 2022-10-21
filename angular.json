@@ -4,6 +4,8 @@
   "projects": {
     "core-services-storage": "libs/core/services/storage",
     "dashboard": "apps/dashboard",
+    "e2e-dashboard-e2e": "apps/e2e/dashboard-e2e",
+    "e2e-history-e2e": "apps/e2e/history-e2e",
     "e2e-navbar-e2e": "apps/e2e/navbar-e2e",
     "e2e-toolbar-e2e": "apps/e2e/toolbar-e2e",
     "features-dashboard": "libs/features/dashboard",

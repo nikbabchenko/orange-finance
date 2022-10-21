@@ -43,7 +43,7 @@ import { Component } from '@angular/core';
 class ToolbarTestComponent {}
 
 export default {
-  title: 'ToolbarComponent',
+  title: 'UIkit / ToolbarComponent',
   component: ToolbarTestComponent,
   decorators: [
     moduleMetadata({

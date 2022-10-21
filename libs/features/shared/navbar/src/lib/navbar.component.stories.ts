@@ -6,7 +6,7 @@ import { NavbarComponent } from './navbar.component';
 import { RouterModule } from '@angular/router';
 
 export default {
-  title: 'NavbarComponent',
+  title: 'Features / Shared / NavbarComponent',
   component: NavbarComponent,
   decorators: [
     moduleMetadata({

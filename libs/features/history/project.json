@@ -35,6 +35,37 @@
           "libs/features/history/**/*.html"
         ]
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/features/history/.storybook",
+        "browserTarget": "features-history:build-storybook",
+        "compodoc": false,
+        "styles": ["libs/ui-kit/theme/theme.scss"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/features-history",
+        "configDir": "libs/features/history/.storybook",
+        "browserTarget": "features-history:build-storybook",
+        "compodoc": false,
+        "styles": ["libs/ui-kit/theme/theme.scss"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
     }
   },
   "tags": ["feature"]
