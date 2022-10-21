@@ -17,7 +17,9 @@
           "apps/orange-portal/src/favicon.ico",
           "apps/orange-portal/src/assets"
         ],
-        "styles": ["apps/orange-portal/src/styles.scss"],
+        "styles": ["apps/orange-portal/src/styles.scss",
+        "libs/ui-kit/theme/theme.scss"
+      ],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/orange-portal/webpack.config.js"
