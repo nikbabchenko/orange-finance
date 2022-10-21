@@ -7,6 +7,7 @@
     "features-dashboard": "libs/features/dashboard",
     "features-history": "libs/features/history",
     "history": "apps/history",
-    "orange-portal": "apps/orange-portal"
+    "orange-portal": "apps/orange-portal",
+    "ui-kit-components-toolbar": "libs/ui-kit/components/toolbar"
   }
 }

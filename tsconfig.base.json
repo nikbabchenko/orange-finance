@@ -19,7 +19,10 @@
         "libs/core/services/storage/src/index.ts"
       ],
       "@orange-features/dashboard": ["libs/features/dashboard/src/index.ts"],
-      "@orange-features/history": ["libs/features/history/src/index.ts"]
+      "@orange-features/history": ["libs/features/history/src/index.ts"],
+      "@orange-ui-kit/components/toolbar": [
+        "libs/ui-kit/components/toolbar/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
