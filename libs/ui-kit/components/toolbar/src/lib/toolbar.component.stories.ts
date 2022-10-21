@@ -40,7 +40,7 @@ import { Component } from '@angular/core';
     </oe-toolbar>
   `,
 })
-export class ToolbarTestComponent {}
+class ToolbarTestComponent {}
 
 export default {
   title: 'ToolbarComponent',
