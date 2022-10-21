@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { loadRemoteModule } from '@nrwl/angular/mf';
+import { FeaturesSharedNavbarModule } from '@orange-features-shared/navbar';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
+    FeaturesSharedNavbarModule,
     RouterModule.forRoot(
       [
         {
