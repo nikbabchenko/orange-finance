@@ -1,1 +1,1 @@
-export * from './lib/ui-kit-components-toolbar.module';
+export * from './lib';
