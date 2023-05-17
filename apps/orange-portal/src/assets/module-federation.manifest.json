@@ -1,4 +1,4 @@
 {
-  "dashboard": "http://localhost:4300",
-  "history": "http://localhost:4305"
+  "dashboard": "http://micro-dashboard.surge.sh",
+  "history": "http://micro-history.surge.sh"
 }

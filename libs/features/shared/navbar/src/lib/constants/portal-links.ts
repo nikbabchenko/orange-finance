@@ -7,6 +7,6 @@ export const portalLinks: Navlink[] = [
     },
     {
         route: 'history',
-        title: 'history',
+        title: 'History',
     }
 ];
